@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import map from './assets/map1.png';
 import './App.css';
 import {
   Table,
@@ -50,8 +50,7 @@ function App() {
         <Card>
           <CardMedia
           component="img"
-            height="140"
-            image=""
+            image={map}
             alt="Map"
           />
           <CardContent>
