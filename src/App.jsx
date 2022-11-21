@@ -20,6 +20,8 @@ import {
   CardContent,
   CardActions,
   Button,
+  Dialog,
+  DialogContent,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CheckIcon from '@mui/icons-material/Check';
@@ -49,21 +51,32 @@ function App() {
         <Typography variant="h2">HTA Official Website</Typography>
         <Card>
           <CardMedia
-          component="img"
+            component="img"
+            sx={{aspectRatio: '1', maxHeight: '200px'}}
             image={map}
-            alt="HTA Highway Map"
+            alt="Map"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Map
+              HTA Highway Map
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              bla bla bla
+              
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Xyz</Button>
-            <Button size="small">xyz</Button>
+            <Button size="small" onClick={() => {setDialogOpen(true)}}>Open Full Map</Button>
+            <Dialog open={dialogOpen} onClose={() => {setDialogOpen(false)}}>
+              <DialogContent>
+                <img src={map} style={{height: '487px'}}/>
+                <Typography>
+                  Blue = Class A Road <br/>
+                  Red = Class B Road <br/>
+                  Green = Class C Road <br/>
+                  Yellow = Class D Road <br/>
+                </Typography>
+              </DialogContent>
+            </Dialog>
           </CardActions>
         </Card>
         <Accordion>
