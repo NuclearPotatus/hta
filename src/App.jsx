@@ -51,7 +51,7 @@ function App() {
           <CardMedia
           component="img"
             image={map}
-            alt="Map"
+            alt="HTA Highway Map"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
