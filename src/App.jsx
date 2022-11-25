@@ -205,6 +205,25 @@ function App() {
         </Accordion>
         <Accordion>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            Licence
+          </AccordionSummary>
+          <AccordionDetails>
+            <TableContainer>
+              <Table>
+                <TableHead />
+                <TableBody>
+                  <TableRow>
+                    <TableCell>
+                    Licences can be bought at the city of Stockholm. Cost for HTA Licence is 30 €. Lifelong, but if lost the owner has to buy a new licence at a cost of 30 €
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             Traffic Infractions
           </AccordionSummary>
           <AccordionDetails>
