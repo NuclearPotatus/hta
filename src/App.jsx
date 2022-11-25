@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import map from './assets/map1.png';
+import map from './assets/map2.png';
 import './App.css';
 import {
   Table,
